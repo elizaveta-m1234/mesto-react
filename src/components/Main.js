@@ -25,15 +25,15 @@ function Main({ onEditProfile, onEditAvatar, onAddPlace, onCardClick }) {
   return (
     <main className="main page__main">
       <section className="profile page__profile">
-
-        <div className="profile__avatar-place">
-          <button onClick={onEditAvatar} className="profile__avatar-btn" aria-label="Изменить">
-            <div className="profile__avatar" style={{ backgroundImage: `url(${userAvatar})` }}></div>
-            <img className="profile__hover" src={edit_avatar}></img>
-          </button>
-        </div>
             
         <div className="profile__data">
+          <div className="profile__avatar-place">
+            <button onClick={onEditAvatar} className="profile__avatar-btn" aria-label="Изменить">
+              <div className="profile__avatar" style={{ backgroundImage: `url(${userAvatar})` }}></div>
+              <img className="profile__hover" src={edit_avatar}></img>
+            </button>
+          </div>
+
           <div className="profile__info">
             <h1 className="profile__name">{userName}</h1>
             <button onClick={onEditProfile} className="profile__edit-button button" aria-label="Изменить" type="button"></button>

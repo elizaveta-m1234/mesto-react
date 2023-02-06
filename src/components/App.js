@@ -73,8 +73,9 @@ function App() {
         </>}
         onClose={closeAllPopups} buttonText="Сохранить" />
       
-      <ImagePopup card={selectedCard} onClose={closeAllPopups}/> 
+      {selectedCard && <ImagePopup card={selectedCard} onClose={closeAllPopups} />} 
     </div>
+      
   );
 }
 
